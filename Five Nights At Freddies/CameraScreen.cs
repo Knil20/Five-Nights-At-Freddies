@@ -14,13 +14,13 @@ namespace Five_Nights_At_Freddies
     {
         public CameraScreen()
         {
+            InitializeComponent();     
             InitializeComponent();
             cameraTimer.Enabled = true;
             cameraButton.Size = new System.Drawing.Size(782, 56);
             cameraButton.Location = new System.Drawing.Point(this.Width + 250, (this.Height - 15) * 6);
             camMap.Size = new System.Drawing.Size(399, 342);
             camMap.Location = new System.Drawing.Point(this.Width + 1000, (this.Height - 65) * 6);
-            
         }
 
         private void cameraButton_MouseHover(object sender, EventArgs e)
@@ -37,7 +37,6 @@ namespace Five_Nights_At_Freddies
         private void cameraTimer_Tick(object sender, EventArgs e)
         {
             cameraButton.Enabled = true;
-            cameraButton.Enabled = true;
         }
     }
-}
+        }
